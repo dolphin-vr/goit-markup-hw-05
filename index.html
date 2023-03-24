@@ -21,7 +21,7 @@
                 <a href="./index.html" class="logo link">Web<span class="navi">Studio</span></a>
                 <ul class="menu list">
                     <li class="item">
-                        <a href="./index.html" class="link">Studio</a>
+                        <a href="./index.html" class="link current-page">Studio</a>
                     </li>
                     <li class="item">
                         <a href="./portfolio.html" class="link">Portfolio</a>
@@ -45,7 +45,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="order-btn btn">Order Service</button>
+            <button data-modal-open type="button" class="order-btn btn">Order Service</button>
         </section>
 
         <section class="principle section">
@@ -223,6 +223,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- order service modal window -->
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+            <button data-modal-close class="close-button" aria-label="Close window" type="button"></button>
+        </div>
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>
